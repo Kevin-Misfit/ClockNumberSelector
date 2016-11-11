@@ -1,0 +1,27 @@
+# directories
+.gradle/
+.idea/
+*/build/
+build/
+gen/
+bin/
+tmp/
+captures/
+obj/
+
+# ndk building files
+*/.externalNativeBuild/
+
+
+# binnary files
+.DS_Store
+*.apk
+*.class
+*.tmp
+*.bak
+*.swp
+*.dex
+
+# configure files
+local.properties
+*.iml
