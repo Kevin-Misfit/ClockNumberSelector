@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ClockNumberSelectorView">
+        <attr name="watchFaceImage" format="reference" />
+        <attr name="handImage" format="reference" />
+        <attr name="colorDotImage" format="reference" />
+        <attr name="cellRadius" format="dimension" />
+        <attr name="cellTextSize" format="dimension" />
+        <attr name="cellBackgroundColorSelected" format="color|reference" />
+        <attr name="cellNumberColorSelected" format="color|reference" />
+        <attr name="cellNumberColorDisabled" format="color|reference" />
+        <attr name="cellNumberColorEnabled" format="color|reference" />
+    </declare-styleable>
+</resources>
