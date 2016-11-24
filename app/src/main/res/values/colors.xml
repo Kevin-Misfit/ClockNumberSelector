@@ -3,12 +3,16 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-
+    
     <color name="clock_number_selector_cell_selected">#ff414141</color>
     <color name="clock_number_selector_cell_number_selected">#ffffffff</color>
     <color name="clock_number_selector_cell_number_enabled">#ff414141</color>
     <color name="clock_number_selector_cell_number_disabled">#4c414141</color>
-
+    
     <dimen name="clock_number_selector_cell_default_radius">27dp</dimen>
     <dimen name="clock_number_selector_cell_text_default_size">25sp</dimen>
+    
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    
 </resources>

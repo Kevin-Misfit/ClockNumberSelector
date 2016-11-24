@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <include layout="@layout/toolbar" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize"
+        android:gravity="center">
+        
+        <com.pisces.demo.commons.widget.InstructionView
+            android:id="@+id/lap_instructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:alpha="0.7"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            app:itemDrawable="@drawable/shape_grey_dot_5dp"
+            app:itemDrawablePadding="18dp"
+            app:itemSpace="10dp"
+            app:textArray="@array/tmp_instructions" />
+    
+    </RelativeLayout>
+
+
+</RelativeLayout>

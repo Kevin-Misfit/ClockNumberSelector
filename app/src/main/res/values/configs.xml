@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fontGothamRegular">font/Gotham-Book.otf</string>
+    <string name="fontGothamLight">font/Gotham-Light.otf</string>
+    <string name="fontGothamMedium">font/Gotham-Medium.otf</string>
+
+    <integer name="avatar_image_size">512</integer>
+
+    <integer name="food_image_width">1080</integer>
+    <integer name="food_image_height">720</integer>
+</resources>

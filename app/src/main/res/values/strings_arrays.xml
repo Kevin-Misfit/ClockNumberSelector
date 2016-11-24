@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string-array name="tmp_instructions">
+        <item>@string/lap_counting_instruction1</item>
+        <item>@string/lap_counting_instruction2</item>
+        <item>@string/timer_instruction1</item>
+        <item>@string/timer_instruction2</item>
+    </string-array>
+
+</resources>

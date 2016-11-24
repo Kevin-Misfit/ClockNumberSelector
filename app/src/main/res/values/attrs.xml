@@ -11,4 +11,14 @@
         <attr name="cellNumberColorDisabled" format="color|reference" />
         <attr name="cellNumberColorEnabled" format="color|reference" />
     </declare-styleable>
+    
+    <declare-styleable name="InstructionView">
+        <attr name="textArray" format="reference" />
+        <attr name="itemSpace" format="dimension" />
+        <attr name="itemDrawable" format="reference" />
+        <attr name="itemDrawablePadding" format="dimension" />
+        <attr name="android:textSize" />
+        <attr name="android:gravity" />
+        <attr name="android:textColor" />
+    </declare-styleable>
 </resources>

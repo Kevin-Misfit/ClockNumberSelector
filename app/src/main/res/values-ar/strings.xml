@@ -1,0 +1,6 @@
+<resources>
+    <string name="lap_counting_instruction1">"اضغط ثلاث مرات برفق للبدء في عد الدورات"</string>
+    <string name="lap_counting_instruction2">"اضغط ثلاث مرات برفق لإنهاء عد الدورات"</string>
+    <string name="timer_instruction1">"إذا قمت بضبط المؤقت، سينتهي عد الدورات تلقائيًا عند انتهاء الوقت المحدد"</string>
+    <string name="timer_instruction2">"الضغط الثلاثي برفق لإنهاء عد الدورات سيقوم بإلغاء المؤقت."</string>
+</resources>

@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Demo</string>
+    <string name="app_name">OpenDemo</string>
+    
+    <string name="lap_counting_instruction1">"Triple tap to start lap counting"</string>
+    <string name="lap_counting_instruction2">"Triple tap to end lap counting"</string>
+    
+    <string name="timer_instruction1">"If you set a timer, lap counting will end automatically when time is up"</string>
+    <string name="timer_instruction2">"Triple tap to end lap counting will cancel the timer."</string>
 </resources>

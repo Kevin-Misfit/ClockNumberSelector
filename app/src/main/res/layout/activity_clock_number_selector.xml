@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pisces.demo.MainActivity">
+    
+    <include layout="@layout/toolbar" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/instruction_tv"
+        android:layout_marginTop="?actionBarSize"
+        android:gravity="center">
+        
+        <com.pisces.demo.commons.widget.ClockNumberSelectorView
+            android:id="@+id/clock_number_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            app:cellBackgroundColorSelected="@color/clock_number_selector_cell_selected"
+            app:cellNumberColorDisabled="@color/clock_number_selector_cell_number_disabled"
+            app:cellNumberColorEnabled="@color/clock_number_selector_cell_number_enabled"
+            app:cellNumberColorSelected="@color/clock_number_selector_cell_number_selected"
+            app:cellRadius="@dimen/clock_number_selector_cell_default_radius"
+            app:cellTextSize="@dimen/clock_number_selector_cell_text_default_size"
+            app:colorDotImage="@drawable/ic_color_green"
+            app:handImage="@drawable/ic_hands"
+            app:watchFaceImage="@drawable/ic_watchface" />
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/instruction_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="18dp"
+        android:gravity="center"
+        android:lineSpacingExtra="10sp"
+        android:textColor="#1d1d1d"
+        android:textSize="20sp" />
+
+</RelativeLayout>
