@@ -36,7 +36,29 @@ public class InstructionViewActivity extends BaseActivity {
                 TypefaceUtils.TYPEFACE_MEDIUM
         };
 
+        final CharSequence[] addArr = getResources()
+                .getStringArray(R.array.tmp_instructions);
+
         final InstructionView instructionView = (InstructionView) findViewById(R.id.lap_instructions);
+
+        findViewById(R.id.add_string).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                CharSequence[] texts = instructionView.getCharSequence();
+                if(texts == null) {
+                    texts = new CharSequence[]{};
+                }
+
+                CharSequence[] combinedInstructions = new CharSequence[texts.length +
+                        addArr.length];
+
+                System.arraycopy(texts, 0, combinedInstructions, 0, texts.length);
+                System.arraycopy(addArr, 0, combinedInstructions,
+                        texts.length, addArr.length);
+
+                instructionView.setCharSequences(combinedInstructions);
+            }
+        });
 
         findViewById(R.id.change_color).setOnClickListener(new View.OnClickListener() {
             @Override

@@ -91,7 +91,7 @@ public class InstructionView extends View {
         mItemDrawable.setColorFilter(new PorterDuffColorFilter(textColor, PorterDuff.Mode.SRC_IN));
     }
 
-    public CharSequence[] getCharSequeneces() {
+    public CharSequence[] getCharSequence() {
         return mCharSequences;
     }
 
@@ -132,6 +132,11 @@ public class InstructionView extends View {
 
         // calculate the desired height and width
         if ((mCharSequences != null && mDesiredHeight == 0) || mIsNeedRecalculate) {
+            if(mIsNeedRecalculate) {
+                mDesiredHeight = 0;
+                mDesiredWidth = 0;
+            }
+
             int textPadding = (int) (mItemDrawable.getIntrinsicWidth() + mItemDrawablePadding);
             int textWidthSize = widthSize - textPadding;
             int itemSpace = Math.round(mItemSpace); // should be int
