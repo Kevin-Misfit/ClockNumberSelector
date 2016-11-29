@@ -8,6 +8,7 @@ import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
 import android.graphics.Rect;
+import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.ColorInt;
 import android.support.annotation.Nullable;
@@ -49,6 +50,8 @@ public class InstructionView extends View {
     private Drawable mItemDrawable;
     private float mItemDrawablePadding;
 
+    private boolean mIsNeedRecalculate = false;
+
     private List<StaticLayout> mStaticLayoutList = new ArrayList<>();
 
     public InstructionView(Context context) {
@@ -88,8 +91,14 @@ public class InstructionView extends View {
         mItemDrawable.setColorFilter(new PorterDuffColorFilter(textColor, PorterDuff.Mode.SRC_IN));
     }
 
+    public CharSequence[] getCharSequeneces() {
+        return mCharSequences;
+    }
+
     public void setCharSequences(CharSequence[] charSequences) {
         mCharSequences = charSequences;
+
+        mIsNeedRecalculate = true;
         requestLayout();
     }
 
@@ -99,6 +108,15 @@ public class InstructionView extends View {
 
         if (mCharSequences != null) {
             invalidate();
+        }
+    }
+
+    public void setTypeFace(Typeface typeFace) {
+        mTextPaint.setTypeface(typeFace);
+
+        if (mCharSequences != null) {
+            mIsNeedRecalculate = true;
+            requestLayout();
         }
     }
 
@@ -113,14 +131,14 @@ public class InstructionView extends View {
         int heightSize = MeasureSpec.getSize(heightMeasureSpec);
 
         // calculate the desired height and width
-        if (mCharSequences != null && mDesiredHeight == 0) {
+        if ((mCharSequences != null && mDesiredHeight == 0) || mIsNeedRecalculate) {
             int textPadding = (int) (mItemDrawable.getIntrinsicWidth() + mItemDrawablePadding);
             int textWidthSize = widthSize - textPadding;
             int itemSpace = Math.round(mItemSpace); // should be int
 
             int desiredTextWidth = 0;
             for (CharSequence charSequence : mCharSequences) {
-                if(TextUtils.isEmpty(charSequence)) {
+                if (TextUtils.isEmpty(charSequence)) {
                     continue;
                 }
 
@@ -136,6 +154,8 @@ public class InstructionView extends View {
 
             mDesiredHeight -= itemSpace; // remove last space
             mDesiredWidth = desiredTextWidth + textPadding;
+
+            mIsNeedRecalculate = false;
         }
 
         int width;
