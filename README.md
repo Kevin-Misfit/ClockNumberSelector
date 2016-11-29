@@ -1,5 +1,5 @@
 # Open Demo
-<img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher" >
+<img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" >
 
 Open Demo is one of my side project, the major purpose is to list all my demo for future use, 
 or you can give me some suggestions if you find any inconvenient。 
