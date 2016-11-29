@@ -9,7 +9,6 @@ A custom view for user to select a clock number to set a alarm or notification
 
 <img src="art/device-2016-11-10-184044.gif" height="400">
 
-
 ### 2. InstructionView
 Sometime we need show some instructions to tell user how to control the smart device, like below:
 <pre>
@@ -24,11 +23,14 @@ what if we wanna change color or font, then we have to change it one by one, so 
 so I decided to implement a instruction view myself.
 
 For this instruction view, support: 
-1. Support RTL layout.
+##### Support RTL layout
 <img src="art/device-2016-11-29-163815.gif" height="400">
-2. Font changing.
+
+##### Font changing.
 <img src="art/device-2016-11-29-165203.gif" height="400">
-3. Color changing. 
+
+##### Color changing. 
 <img src="art/device-2016-11-29-165138" height="400">
-4. Add text dynamically. 
+
+##### Add text dynamically. 
 <img src="art/device-2016-11-29-165047" height="400">
