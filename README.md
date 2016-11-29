@@ -23,14 +23,14 @@ what if we wanna change color or font, then we have to change it one by one, so 
 so I decided to implement a instruction view myself.
 
 For this instruction view, support: 
-##### Support RTL layout
+##### Support RTL layout.
 <img src="art/device-2016-11-29-163815.gif" height="400">
 
 ##### Font changing.
 <img src="art/device-2016-11-29-165203.gif" height="400">
 
 ##### Color changing. 
-<img src="art/device-2016-11-29-165138" height="400">
+<img src="art/device-2016-11-29-165138.gif" height="400">
 
 ##### Add text dynamically. 
-<img src="art/device-2016-11-29-165047" height="400">
+<img src="art/device-2016-11-29-165047.gif" height="400">
